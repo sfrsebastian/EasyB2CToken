@@ -32,6 +32,9 @@ router.get('/code', function(req, res, next){
     if (res && (res.statusCode === 200 || res.statusCode === 201)) {
       res.json({token:JSON.parse(body).access_token});
     }
+    else{
+      res.redirect('/');
+    }
   });
 });
 
