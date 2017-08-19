@@ -4,5 +4,5 @@ module.exports = {
     redirect: process.env.redirect ||"<Redirect>/code",
     scopes: process.env.scopes || "<Scopes>",
     policy: process.env.policy || "<Tenant>",
-    client_secret: process.env.policy || "<Secret>"
+    client_secret: process.env.client_secret || "<Secret>"
 }
