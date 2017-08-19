@@ -28,6 +28,7 @@ router.get('/code', function(req, res, next){
   };
 
   request(options, function(err, response, body) {
+    console.log(body);
     if (res && (res.statusCode === 200 || res.statusCode === 201)) {
       res.json({token:JSON.parse(body).access_token});
     }
